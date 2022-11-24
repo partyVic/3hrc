@@ -1,18 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
+import { newsReducers } from './reducers/newsReducers'
 
 
 const reducer = {
-
+    newsList: newsReducers
 }
 
-const preloadedState = {
-    user: {
-        name: 'partyVic'
-    }
-}
-
-
-export default configureStore({
+const store = configureStore({
     reducer,
-    preloadedState,
+    devTools: process.env.NODE_ENV !== 'production', //only show devTools when in production
 })
+
+export default store

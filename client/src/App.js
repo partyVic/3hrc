@@ -1,11 +1,21 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Header from './components/Header'
+import Footer from './components/Footer'
+import HomeScreen from './screens/HomeScreen'
+
 
 const App = () => {
-  const state = useSelector(state => state)
-  console.log(state)
   return (
-    <div>App</div>
+    <Router>
+      <Header />
+      <div>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   )
 }
 
