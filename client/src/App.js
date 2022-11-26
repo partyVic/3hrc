@@ -1,14 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Header from './components/Header'
+import Footer from './components/Footer'
+import HomeScreen from './screens/HomeScreen'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      repo testing
-      master repo added
-      ACCESS TEST
-    </div>
-  );
+    <Router>
+      <Header />
+      <div>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
+  )
 }
 
-export default App;
+export default App
