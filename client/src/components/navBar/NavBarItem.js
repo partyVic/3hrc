@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ChevronDown from './icons/chevron-down'
-import DropDownModal from './DropDownModal'
+import ChevronDown from '../icons/chevron-down'
+import NavBarDropDownModal from './NavBarDropDownModal'
 import './navBarItem.css'
 
 const NavBarItem = ({ title, showChevronDownIcon, navItems }) => {
@@ -39,7 +39,7 @@ const NavBarItem = ({ title, showChevronDownIcon, navItems }) => {
 
                 {isShowModal && navItems &&
                     <div className='absolute top-12' >
-                        <DropDownModal navItems={navItems} />
+                        <NavBarDropDownModal navItems={navItems} />
                     </div>}
             </div>
 
