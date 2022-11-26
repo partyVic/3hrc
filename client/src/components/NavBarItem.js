@@ -18,7 +18,7 @@ const NavBarItem = ({ title, showChevronDownIcon, navItems }) => {
     }
     return (
         <div
-            className='NavBarItem relative mr-10 h-full flex items-center'
+            className='NavBarItem relative mr-10 h-full flex items-center cursor-pointer'
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
         >
