@@ -3,7 +3,7 @@ import ChevronDown from '../icons/chevron-down'
 import NavBarDropDownModal from './NavBarDropDownModal'
 import './navBarItem.css'
 
-const NavBarItem = ({ title, showChevronDownIcon, navItems }) => {
+const NavBarItem = ({ title, showDropDownModal, navItems }) => {
     const [isShowModal, setIsShowModal] = useState(false)
     const [isHovering, setIsHovering] = useState(false)
 
@@ -32,12 +32,12 @@ const NavBarItem = ({ title, showChevronDownIcon, navItems }) => {
                     {title}
                 </span>
 
-                {showChevronDownIcon &&
+                {showDropDownModal &&
                     <span className={`mt-1 ${isHovering ? 'text-red-500' : ''}`}>
                         <ChevronDown />
                     </span>}
 
-                {isShowModal && navItems &&
+                {isShowModal && showDropDownModal &&
                     <div className='absolute top-12' >
                         <NavBarDropDownModal navItems={navItems} />
                     </div>}

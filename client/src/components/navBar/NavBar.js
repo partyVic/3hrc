@@ -2,12 +2,11 @@ import React from 'react'
 import NavBarItem from './NavBarItem'
 
 const navBarItems = [
-  { title: 'Home', navItems: null },
-  { title: 'Infomation', navItems: null },
+  { title: 'Home', navItems: [] },
+  { title: 'Infomation', navItems: [] },
   { title: 'Programs', navItems: ['Program 1', 'Program 2'] },
-  { title: 'CODE OF PRACTICE & COMPLAINT FORM', navItems: null },
-  { title: 'Sponsors', navItems: null },
-
+  { title: 'CODE OF PRACTICE & COMPLAINT FORM', navItems: ['Form 1', 'From2'] },
+  { title: 'Sponsors', navItems: [] },
 ]
 
 const NavBar = () => {
@@ -19,7 +18,7 @@ const NavBar = () => {
           key={item.title}
           title={item.title}
           navItems={item.navItems}
-          showChevronDownIcon={item.title === 'Programs'}
+          showDropDownModal={item.navItems.length ? true : false}
         />
       ))}
     </div>
