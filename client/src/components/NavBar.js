@@ -1,22 +1,25 @@
-import React, { useState } from 'react'
+import React from 'react'
 import NavBarItem from './NavBarItem'
 
 const navBarItems = [
-  'Home',
-  'Infomation',
-  'Programs',
-  'CODE OF PRACTICE & COMPLAINT FORM'
+  { title: 'Home', navItems: null },
+  { title: 'Infomation', navItems: null },
+  { title: 'Programs', navItems: ['Program 1', 'Program 2'] },
+  { title: 'CODE OF PRACTICE & COMPLAINT FORM', navItems: null },
+  { title: 'Sponsors', navItems: null },
+
 ]
 
 const NavBar = () => {
   return (
-    <div className='flex h-full items-center'>
+    <div className='flex h-full items-center cursor-pointer'>
 
       {navBarItems.map((item) => (
         <NavBarItem
-          key={item}
-          title={item}
-          showChevronDownIcon={item === 'Programs'}
+          key={item.title}
+          title={item.title}
+          navItems={item.navItems}
+          showChevronDownIcon={item.title === 'Programs'}
         />
       ))}
     </div>

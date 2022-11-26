@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'lato': ['Lato', 'Helvetica', 'Arial', 'sans-serif']
+    }
   },
   plugins: [],
 }
