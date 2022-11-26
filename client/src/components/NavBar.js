@@ -12,7 +12,7 @@ const navBarItems = [
 
 const NavBar = () => {
   return (
-    <div className='flex h-full items-center cursor-pointer'>
+    <div className='flex h-full items-center'>
 
       {navBarItems.map((item) => (
         <NavBarItem
