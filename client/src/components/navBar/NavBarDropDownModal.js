@@ -7,7 +7,7 @@ const NavBarDropDownModal = ({ navItems }) => {
     <div className='NavBarDropDownModal pt-4 w-56 h-24 rounded-b-md'>
       {navItems.map(item => (
         <div
-          className={`ml-8 mt-2 hover:text-red-500 hover:underline hover:underline-offset-2 hover:decoration-solid hover:cursor-pointer`}
+          className={`ml-8 mt-2 hover:text-rose-500 hover:underline hover:underline-offset-2 hover:decoration-indigo-500 hover:cursor-pointer`}
           key={item}
         >
           {item}

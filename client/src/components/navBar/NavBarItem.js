@@ -33,7 +33,7 @@ const NavBarItem = ({ title, showDropDownModal, navItems }) => {
                 </span>
 
                 {showDropDownModal &&
-                    <span className={`mt-1 ${isHovering ? 'text-red-500' : ''}`}>
+                    <span className={`mt-1 ${isHovering ? 'text-rose-500' : ''}`}>
                         <ChevronDown />
                     </span>}
 

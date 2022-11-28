@@ -11,7 +11,7 @@ const navBarItems = [
 
 const NavBar = () => {
   return (
-    <div className='flex h-full items-center'>
+    <div className='flex h-full w-3/4 items-center'>
 
       {navBarItems.map((item) => (
         <NavBarItem
