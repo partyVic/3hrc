@@ -2,17 +2,17 @@ import React from 'react'
 import QuestionMarkCircle from '../icons/question-mark-circle'
 import Radio from '../icons/radio'
 
-const headerTitle = [
-    { title: '3HCR' },
-    { title: 'Radio' },
-]
+// const headerTitle = [
+//     { title: '3HCR' },
+//     { title: 'Radio' },
+// ]
 
-const headerItems = [
-    { item: 'About us' },
-    { item: 'Help & support' }
-]
+// const headerItems = [
+//     { item: 'About us' },
+//     { item: 'Help & support' }
+// ]
 
-const HeaderTitle = () => {
+const NavHeaderTitle = () => {
     return (
         <div className='flex w-3/4 h-full items-center justify-between'>
             <div>3HCR</div>
@@ -24,10 +24,10 @@ const HeaderTitle = () => {
                     <span>About us</span>
                 </div>
                 <div className='flex  cursor-pointer'>
-                    <span className='mr-1 text-indigo-500'>
+                    <span className='mr-1 text-sky-500'>
                         <Radio />
                     </span>
-                    <span className='bg-indigo-500 text-white px-1 rounded'>Help & support</span>
+                    <span className='bg-sky-500 text-white px-1 rounded'>Help & support</span>
                 </div>
             </div>
 
@@ -35,4 +35,4 @@ const HeaderTitle = () => {
     )
 }
 
-export default HeaderTitle
+export default NavHeaderTitle
