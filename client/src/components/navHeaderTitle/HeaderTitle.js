@@ -17,17 +17,17 @@ const NavHeaderTitle = () => {
         <div className='flex w-3/4 h-full items-center justify-between'>
             <div>3HCR</div>
             <div className='flex text-sm text-[#4d4d54]'>
-                <div className='flex mr-8 cursor-pointer'>
+                <div className='flex mr-8 cursor-pointer items-center'>
                     <span className='mr-1'>
                         <QuestionMarkCircle />
                     </span>
                     <span>About us</span>
                 </div>
                 <div className='flex  cursor-pointer'>
-                    <span className='mr-1 text-sky-500'>
+                    <span className='mr-1 mt-1 text-sky-500'>
                         <Radio />
                     </span>
-                    <span className='bg-sky-500 text-white px-1 rounded'>Help & support</span>
+                    <span className='bg-sky-500 text-white px-3 py-1 rounded-full'>Help & support</span>
                 </div>
             </div>
 

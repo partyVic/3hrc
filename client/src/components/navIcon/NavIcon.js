@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Bars from '../icons/bars'
 import NavIconModal from './navIconModal'
-import XMark from '../icons/x-mark'
 
 const navBarItems = [
   { title: 'Home', navItems: [], navItemURL: '/' },
@@ -14,23 +13,28 @@ const navBarItems = [
 const NavIcon = () => {
   const [isOpenModal, setIsOpenModal] = useState(false)
 
+  const handleModalOpen = () => {
+    setIsOpenModal(true)
+  }
+
+  const handleModalClose = () => {
+    setIsOpenModal(false)
+  }
+
   return (
     <div className='flex'>
       <div
-        className='ml-4 cursor-pointer'
-        onClick={() => setIsOpenModal(true)}
+        className='ml-4 my-2 cursor-pointer'
+        onClick={handleModalOpen}
       >
         <Bars />
       </div>
 
       {isOpenModal &&
         <div className='absolute w-full' >
-          <div>
-            <NavIconModal />
-          </div>
-          <span>
-            <XMark />
-          </span>
+          <NavIconModal
+            handleModalClose={handleModalClose}
+          />
         </div>
       }
     </div>

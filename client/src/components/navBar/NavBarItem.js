@@ -38,13 +38,10 @@ const NavBarItem = ({ title, showDropDownModal, navItems }) => {
                     </span>}
 
                 {isShowModal && showDropDownModal &&
-                    <div className='absolute top-12' >
+                    <div className='absolute top-12'>
                         <NavBarDropDownModal navItems={navItems} />
                     </div>}
             </div>
-
-
-
         </div>
     )
 }
