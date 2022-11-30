@@ -20,7 +20,7 @@ const NavIcon = () => {
   useOutSideClick(ref, handleModalClose)
 
   return (
-    <div className='flex justify-between items-center bg-black' ref={ref}>
+    <div className='flex justify-between items-center bg-[#31313d]' ref={ref}>
       <span className='ml-4 text-white'>3HCR</span>
       <div
         className='mr-4 my-2 cursor-pointer'
