@@ -24,10 +24,10 @@ const NavHeaderTitle = () => {
                     <span>About us</span>
                 </div>
                 <div className='flex  cursor-pointer'>
-                    <span className='mr-1 mt-1 text-sky-500'>
+                    <span className='mr-1 mt-1 text-indigo-500'>
                         <Radio />
                     </span>
-                    <span className='bg-sky-500 text-white px-3 py-1 rounded-full'>Help & support</span>
+                    <span className='bg-indigo-500 text-white px-3 py-1 rounded-full'>Help & support</span>
                 </div>
             </div>
 

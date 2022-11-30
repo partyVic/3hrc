@@ -1,16 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Bars from '../icons/bars'
 import NavIconModal from './navIconModal'
+import XMark from '../icons/x-mark'
+import useOutSideClick from '../../helperFunctions/useOutSideClick'
 
-// const navBarItems = [
-//   { title: 'Home', navItems: [], navItemURL: '/' },
-//   { title: 'Infomation', navItems: [], navItemURL: 'info' },
-//   { title: 'Programs', navItems: ['Program 1', 'Program 2'], navItemURL: 'programs' },
-//   { title: 'Forms', navItems: ['Form 1', 'From2'], navItemURL: '' },
-//   { title: 'Sponsors', navItems: [], navItemURL: 'sponsors' },
-// ]
 
 const NavIcon = () => {
+  const ref = useRef()
   const [isOpenModal, setIsOpenModal] = useState(false)
 
   const handleModalOpen = () => {
@@ -21,17 +17,24 @@ const NavIcon = () => {
     setIsOpenModal(false)
   }
 
+  useOutSideClick(ref, handleModalClose)
+
   return (
-    <div className='flex'>
+    <div className='flex justify-between items-center bg-black'  ref={ref}>
+      <span className='ml-4 text-white'>3HRC</span>
       <div
-        className='ml-4 my-2 cursor-pointer'
-        onClick={handleModalOpen}
+        className='mr-4 my-2 cursor-pointer'
       >
-        <Bars />
+        {!isOpenModal &&
+          <div className='text-white' onClick={handleModalOpen}><Bars /></div>}
+
+        {isOpenModal &&
+          <div className='text-white' onClick={handleModalClose}><XMark /></div>
+        }
       </div>
 
       {isOpenModal &&
-        <div className='absolute w-full' >
+        <div className='absolute w-full top-10'>
           <NavIconModal
             handleModalClose={handleModalClose}
           />
