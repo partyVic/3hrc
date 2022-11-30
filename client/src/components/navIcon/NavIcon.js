@@ -20,15 +20,15 @@ const NavIcon = () => {
   useOutSideClick(ref, handleModalClose)
 
   return (
-    <div className='flex justify-between items-center bg-black'  ref={ref}>
-      <span className='ml-4 text-white'>3HRC</span>
+    <div className='flex justify-between items-center bg-black' ref={ref}>
+      <span className='ml-4 text-white'>3HCR</span>
       <div
         className='mr-4 my-2 cursor-pointer'
       >
-        {!isOpenModal &&
-          <div className='text-white' onClick={handleModalOpen}><Bars /></div>}
-
-        {isOpenModal &&
+        {!isOpenModal
+          ?
+          <div className='text-white' onClick={handleModalOpen}><Bars /></div>
+          :
           <div className='text-white' onClick={handleModalClose}><XMark /></div>
         }
       </div>
@@ -36,7 +36,6 @@ const NavIcon = () => {
       {isOpenModal &&
         <div className='absolute w-full top-10'>
           <NavIconModal
-            handleModalClose={handleModalClose}
           />
         </div>
       }

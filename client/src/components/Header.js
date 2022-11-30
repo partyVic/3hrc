@@ -24,7 +24,7 @@ const Header = () => {
 
       <div className='
           md:hidden
-          h-10 w-full block fixed bg-white
+          h-10 w-full block bg-white
       '
       >
         <NavIcon />
