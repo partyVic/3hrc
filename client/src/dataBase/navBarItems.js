@@ -1,4 +1,4 @@
-const navBarItems = [
+const NAVBAR_ITEMS = [
     { title: 'Home', navItems: [], navItemURL: '/' },
     { title: 'Infomation', navItems: [], navItemURL: 'info' },
     { title: 'Programs', navItems: ['Program 1', 'Program 2', 'Program 3', 'Program 4'], navItemURL: 'programs' },
@@ -6,4 +6,4 @@ const navBarItems = [
     { title: 'Supporters', navItems: [], navItemURL: 'Supporters' },
 ]
 
-export default navBarItems
+export default NAVBAR_ITEMS

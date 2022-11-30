@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBarItem from './NavBarItem'
-import navBarItems from '../../dataBase/navBarItems'
+import NAVBAR_ITEMS from '../../dataBase/navBarItems'
 
 const NavBar = () => {
   return (
@@ -9,7 +9,7 @@ const NavBar = () => {
     flex h-full w-5/6 items-center
     '>
 
-      {navBarItems.map((item) => (
+      {NAVBAR_ITEMS.map((item) => (
         <NavBarItem
           key={item.title}
           title={item.title}
