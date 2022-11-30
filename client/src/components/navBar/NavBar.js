@@ -4,7 +4,10 @@ import navBarItems from '../../dataBase/navBarItems'
 
 const NavBar = () => {
   return (
-    <div className='flex h-full w-3/4 items-center'>
+    <div className='
+    lg:w-3/4
+    flex h-full w-5/6 items-center
+    '>
 
       {navBarItems.map((item) => (
         <NavBarItem

@@ -14,7 +14,10 @@ import Radio from '../icons/radio'
 
 const NavHeaderTitle = () => {
     return (
-        <div className='flex w-3/4 h-full items-center justify-between'>
+        <div className='
+        lg:w-3/4 
+        flex w-5/6 h-full items-center justify-between
+        '>
             <div>3HCR</div>
             <div className='flex text-sm text-[#4d4d54]'>
                 <div className='flex mr-8 cursor-pointer items-center'>

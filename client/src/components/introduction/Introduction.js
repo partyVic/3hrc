@@ -4,26 +4,26 @@ import introImg from '../../assets/images/body_Intro.jpg'
 const Introduction = () => {
     return (
         <div className='
-        md:flex
+        md:flex md:justify-end
         w-full h-full
         '>
-            <div className='
-            md:w-1/3 md:h-full
-            ml-4 h-1/5
+                <div className='
+            md:hidden
+            h-1/5 bg-red-200
             '>
-                Intro
-            </div>
-            <div className='
-            md:w-2/3 md:h-full
+                    Intro
+                </div>
+                <div className='
+            md:w-full md:h-full
             h-4/5
             '>
-                <img
-                    className='
+                    <img
+                        className='
                     object-cover h-full w-full
                     '
-                    src={introImg}
-                    alt="Introduction" />
-            </div>
+                        src={introImg}
+                        alt="Introduction" />
+                </div>
         </div>
     )
 }

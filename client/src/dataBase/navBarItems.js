@@ -3,7 +3,7 @@ const navBarItems = [
     { title: 'Infomation', navItems: [], navItemURL: 'info' },
     { title: 'Programs', navItems: ['Program 1', 'Program 2', 'Program 3', 'Program 4'], navItemURL: 'programs' },
     { title: 'Forms', navItems: ['Form 1', 'From2'], navItemURL: '' },
-    { title: 'Sponsors', navItems: [], navItemURL: 'sponsors' },
+    { title: 'Supporters', navItems: [], navItemURL: 'Supporters' },
 ]
 
 export default navBarItems
