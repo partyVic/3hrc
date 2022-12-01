@@ -10,11 +10,12 @@ const Introduction = () => {
 
             <div className='
                 md:hidden
-                h-1/5 bg-red-200 flex
+                h-1/5 flex
                 '>
                 <div className='h-4/5 w-1 bg-rose-500 rounded ml-4 mt-3'></div>
-                <div>
-                    Intro
+                <div className='w-full h-full mt-2 mx-4'>
+                    <h2 className='text-lg font-bold text-rose-500'>[Title of this web: 2-3 words]</h2>
+                    <p className='mt-1 text-sm font-medium text-slate-500'>[Brief description of the web : around 10-20 words]</p>
                 </div>
             </div>
 
@@ -34,8 +35,9 @@ const Introduction = () => {
                     hidden
                     '>
                     <div className='h-4/5 w-1 bg-rose-500 rounded ml-4 mt-6'></div>
-                    <div>
-                        Intro
+                    <div className='w-full h-full mt-4 ml-10 mr-4'>
+                        <h2 className='text-4xl font-bold text-rose-500'>[Title of this web: 2-3 words]</h2>
+                        <p className='mt-4 text-lg font-medium text-white'>[Brief description of the web : around 10-20 words]</p>
                     </div>
                 </div>
             </div>

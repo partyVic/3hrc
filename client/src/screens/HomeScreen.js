@@ -6,7 +6,7 @@ const HomeScreen = () => {
     <div>
       <div className='
       md:h-[40rem]
-      h-[32rem]
+      h-[28rem]
       '>
         <Introduction />
       </div>
