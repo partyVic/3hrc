@@ -48,10 +48,10 @@ const Radio = () => {
             </div>
 
             <div className='md:hidden'>
-                <span className='text-xs bg-yellow-400 rounded-lg px-2 py-0.5 font-serif absolute left-12 bottom-2'>FM 90.9 & 97.3 </span>
+                <span className='text-xs bg-yellow-400 rounded-lg px-2 py-0.5 font-serif absolute left-10 bottom-2'>FM 90.9 & 97.3 </span>
             </div>
             <div className='md:hidden'>
-                <span className='text-xs bg-lime-500 rounded-lg px-2 py-0.5 font-serif absolute right-10 bottom-2'>3HCR OMEO High Country</span>
+                <span className='text-xs bg-lime-500 rounded-lg px-2 py-0.5 font-serif absolute right-7 bottom-2'>3HCR OMEO</span>
             </div>
         </div>
     )
