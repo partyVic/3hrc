@@ -9,7 +9,14 @@
 }
 
 .rhap_stacked .rhap_controls-section {
-  margin-top: 0 !important;
+  /* margin-top: 0 !important; */
+  /* margin-bottom: 1rem; */
+  /* margin-left: 5rem; */
+}
+
+.rhap_container.rhap_loop--off.player{
+  height: 100%;
+  padding-bottom: 2rem;
 }
 
 .rhap_stacked .rhap_play-pause-button {
