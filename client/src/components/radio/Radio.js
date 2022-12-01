@@ -15,7 +15,7 @@ const Radio = () => {
         '>
 
             <div className='
-            md:block md:ml-14 md:mr-4
+            md:block md:ml-4 md:mr-4 xl:block xl:ml-20 xl:mr-4
             hidden
             '>
                 <img className='w-28 rounded px-2 py-2 mb-2 object-cover bg-yellow-400' src={CRN_LOGO} alt="" />
@@ -39,7 +39,7 @@ const Radio = () => {
             </div>
 
             <div className='
-            md:block md:mr-14 md:ml-4
+            md:block md:mr-4 md:ml-4 xl:block xl:mr-20 xl:ml-4
             hidden
             '>
                 <span className='block text-xs bg-yellow-400 rounded-full mb-2 px-2 py-0.5 font-serif'>&nbsp;&nbsp;FM 90.9</span>
