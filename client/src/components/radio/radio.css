@@ -45,3 +45,9 @@
 .rhap_controls-section .rhap_volume-container button[aria-label="Mute"] svg path {
   fill: rgb(235, 235, 235) !important;
 }
+
+@media screen and (max-width: 768px) {
+  .rhap_main.rhap_stacked {
+    margin-top: -2rem;
+  }
+}

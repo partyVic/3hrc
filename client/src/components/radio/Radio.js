@@ -2,17 +2,26 @@ import React from 'react'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import './radio.css'
+import CRN_LOGO from '../../assets/images/CRN-Logo-RGB-Colour.webp'
+import CBF_LOGO from '../../assets/images/CBF-Logo_RGB-Screens.webp'
 import AUDIO_URL from '../../dataBase/audioUrl'
 
-// player
-// md:h-2/3 md:top-7 md:left-32 md:relative
-// h-full
+
 const Radio = () => {
     return (
         <div className='
-            md:w-full md:flex md:justify-center md:items-center
+            md:w-full md:flex md:justify-between md:items-center
             h-full
         '>
+
+            <div className='
+            md:block md:ml-14 md:mr-4
+            hidden
+            '>
+                <img className='w-28 rounded px-2 py-2 mb-2 object-cover bg-yellow-400' src={CRN_LOGO} alt="" />
+                <img className='w-28 rounded object-cover' src={CBF_LOGO} alt="" />
+            </div>
+
             <div className='
             md:w-3/5 md:h-2/3
             h-full
@@ -27,6 +36,22 @@ const Radio = () => {
                     customControlsSection={["MAIN_CONTROLS", "VOLUME_CONTROLS"]}
                     autoPlayAfterSrcChange={false}
                 />
+            </div>
+
+            <div className='
+            md:block md:mr-14 md:ml-4
+            hidden
+            '>
+                <span className='block text-xs bg-yellow-400 rounded-full mb-2 px-2 py-0.5 font-serif'>&nbsp;&nbsp;FM 90.9</span>
+                <span className='block text-xs bg-teal-400 rounded-full mb-2 px-2 py-0.5 font-serif'>&nbsp;&nbsp;FM 97.3</span>
+                <span className='block text-xs bg-lime-500 rounded-full px-2 py-0.5 font-serif'>3HCR OMEO</span>
+            </div>
+
+            <div className='md:hidden'>
+                <span className='text-xs bg-yellow-400 rounded-lg px-2 py-0.5 font-serif absolute left-12 bottom-2'>FM 90.9 & 97.3 </span>
+            </div>
+            <div className='md:hidden'>
+                <span className='text-xs bg-lime-500 rounded-lg px-2 py-0.5 font-serif absolute right-10 bottom-2'>3HCR OMEO High Country</span>
             </div>
         </div>
     )
