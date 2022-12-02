@@ -8,6 +8,11 @@ import './homescreen.css'
 // w-11/12 h-full bg-[#4d4d54] rounded-lg -mt-12 mx-auto
 // md:w-3/4 md:-mt-20
 
+// Audio player dark background
+// HomeScreen-Radio
+// w-11/12 h-full rounded-lg -mt-12 mx-auto backdrop-opacity-10 backdrop-invert bg-white/30
+// md:w-3/4 md:-mt-20
+
 const HomeScreen = () => {
   return (
     <div>
@@ -26,7 +31,7 @@ const HomeScreen = () => {
         {/* //! child div: set to -margin to goes on top of other div */}
         <div className='
         HomeScreen-Radio
-        w-11/12 h-full rounded-lg -mt-12 mx-auto backdrop-opacity-10 backdrop-invert bg-white/30
+        w-11/12 h-full bg-[#4d4d54] rounded-lg -mt-12 mx-auto
         md:w-3/4 md:-mt-20
         '>
           <Radio />
