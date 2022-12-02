@@ -23,6 +23,15 @@ const Radio = () => {
             </div>
 
             <div className='
+            md:flex flex-col
+            hidden
+            '>
+                <span className='block text-xs bg-yellow-400 rounded-full mb-2 px-2 py-0.5 font-serif'>&nbsp;&nbsp;FM 90.9</span>
+                <span className='block text-xs bg-teal-400 rounded-full mb-2 px-2 py-0.5 font-serif'>&nbsp;&nbsp;FM 97.3</span>
+                <span className='block text-xs bg-lime-500 rounded-full px-2 py-0.5 font-serif'>3HCR OMEO</span>
+            </div>
+
+            <div className='
             md:w-3/5 md:h-2/3
             h-full relative
             '>
@@ -45,14 +54,7 @@ const Radio = () => {
                 </div>
             </div>
 
-            <div className='
-            md:flex flex-col
-            hidden
-            '>
-                <span className='block text-xs bg-yellow-400 rounded-full mb-2 px-2 py-0.5 font-serif'>&nbsp;&nbsp;FM 90.9</span>
-                <span className='block text-xs bg-teal-400 rounded-full mb-2 px-2 py-0.5 font-serif'>&nbsp;&nbsp;FM 97.3</span>
-                <span className='block text-xs bg-lime-500 rounded-full px-2 py-0.5 font-serif'>3HCR OMEO</span>
-            </div>
+
 
 
         </div>
