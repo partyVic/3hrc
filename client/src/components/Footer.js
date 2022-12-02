@@ -48,8 +48,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className=' font-lato text-sm ml-20 mr-10 mt-8'>
-        <h4 className='text-[#9ba4ac]'>&copy;COPYRIGHT</h4>
+      <div className=' font-lato text-sm mr-20 ml-10 mt-8'>
+        <h4 className='text-[#9ba4ac]'>&copy;&nbsp;COPYRIGHT</h4>
         <div className='text-white mt-2'>
           <p className='mb-2'>3HCR High Country Radio FM 90.9 & 97.3</p>
           <p className='mb-2'>Omeo Shire Community Access Radio Inc.</p>
