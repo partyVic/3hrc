@@ -25,12 +25,12 @@ const NavHeaderTitle = () => {
             </div>
             
             <div className='flex text-sm text-[#4d4d54]'>
-                <div className='flex mr-8 cursor-pointer items-center'>
+                {/* <div className='flex mr-8 cursor-pointer items-center'>
                     <span className='mr-1'>
                         <QuestionMarkCircle />
                     </span>
                     <span>About us</span>
-                </div>
+                </div> */}
                 <div className='flex  cursor-pointer'>
                     <span className='mr-1 mt-1 text-indigo-500'>
                         <Radio />

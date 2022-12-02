@@ -6,7 +6,8 @@ const Introduction = () => {
         <div className='
             md:flex md:justify-end
             w-full h-full
-            '>
+            '
+        >
 
             <div className='
                 md:hidden

@@ -37,10 +37,9 @@ const HomeScreen = () => {
           <Radio />
         </div>
       </div>
-      <div className='h-96 bg-fuchsia-100'></div>
-      <div className='h-96 bg-fuchsia-100'></div>
-      <div className='h-96 bg-fuchsia-100'></div>
-      <div className='h-96 bg-fuchsia-100'></div>
+      <div className='h-48 bg-fuchsia-100'></div>
+      <div className='h-48 bg-fuchsia-100'></div>
+
     </div>
   )
 }
