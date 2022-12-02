@@ -23,7 +23,7 @@ const NavIcon = () => {
   return (
     <div className='flex justify-between items-center bg-[#31313d]' ref={ref}>
       <div>
-        <span className='ml-4 text-white'>3HCR OMEO</span>
+        <span className='ml-4 text-white'>3HCR Omeo</span>
         <img
           className='h-6 ml-4 inline rounded-full'
           src={LOGO}

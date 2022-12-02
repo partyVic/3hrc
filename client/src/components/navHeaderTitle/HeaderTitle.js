@@ -23,7 +23,7 @@ const NavHeaderTitle = () => {
         flex w-5/6 h-full items-center justify-between
         '>
             <div className='cursor-pointer' onClick={() => navigate('/')}>
-                3HCR OMEO
+                3HCR Omeo
                 <Logo />
             </div>
 
