@@ -9,21 +9,25 @@ import Youtube from './icons/youtube'
 const Footer = () => {
   return (
     <div className='
-    md:flex bg-black pb-8
-    hidden
+    md:flex bg-black md:px-20 xl:px-40
+    block py-10 px-10
     '>
 
-      <div className=' font-lato text-sm ml-20 mt-8 mb-8'>
+      <div className='font-lato text-sm md:mr-20 xl:mr-32'>
         <h4 className='text-[#9ba4ac]'>CONTACT US</h4>
         <div className='mt-2'>
           <span className='text-white flex mb-2'>
             <Phone />
             <p className='ml-2'>0493 088 902</p>
           </span>
-          <span className='text-white flex mb-2'>
-            <MapPin />
-            <p className='ml-2'>73 Sebastopol Hill Road, Omeo, Victoria 3898 Australia</p>
-          </span>
+          <div className='text-white'>
+            <span className='flex'>
+              <MapPin />
+              <p className='ml-2'>73 Sebastopol Hill Road, Omeo</p>
+            </span>
+            <p className='mb-2 ml-7'>Victoria 3898 Australia</p>
+          </div>
+
           <span className='text-white flex'>
             <Envelope />
             <p className='ml-2'>oscarefem@gmail.com</p>
@@ -31,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className=' font-lato text-sm ml-20 mr-20 mt-8'>
+      <div className=' font-lato text-sm md:mr-20 md:mt-0 mt-6 xl:mr-32'>
         <h4 className='text-[#9ba4ac]'>FOLLOW US</h4>
         <div className='flex mt-2'>
           <span className='text-white mr-4'>
@@ -48,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className=' font-lato text-sm mr-20 ml-10 mt-8'>
+      <div className=' font-lato text-sm md:mt-0 mt-6'>
         <h4 className='text-[#9ba4ac]'>&copy;&nbsp;COPYRIGHT</h4>
         <div className='text-white mt-2'>
           <p className='mb-2'>3HCR High Country Radio FM 90.9 & 97.3</p>
