@@ -21,7 +21,7 @@ const NavBarItem = ({ title, showDropDownModal, navItems, navItemURL, isNavigate
     }
     return (
         <div
-            className={`NavBarItem relative mr-10 h-full flex items-center ${isNavigate ? 'cursor-pointer' : ''}`}
+            className={`NavBarItem relative mr-10 h-full flex items-center ${isNavigate ? 'cursor-pointer' : 'cursor-default'}`}
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
         >
