@@ -1,8 +1,12 @@
 import React from 'react'
+import LOGO from '../../src/assets/images/3HCR logo.webp'
 
 const Logo = () => {
     return (
-        <span className='bg-rose-500 rounded-xl ml-4 px-2 py-2 text-white'>Logo</span>
+        <img
+            className='h-8 ml-4 inline rounded-full'
+            src={LOGO}
+            alt="logo" />
     )
 }
 

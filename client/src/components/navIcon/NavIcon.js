@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import Bars from '../icons/bars'
 import NavIconModal from './navIconModal'
 import XMark from '../icons/x-mark'
+import LOGO from '../../../src/assets/images/3HCR logo.webp'
 import useOutSideClick from '../../helperFunctions/useOutSideClick'
 
 
@@ -21,7 +22,14 @@ const NavIcon = () => {
 
   return (
     <div className='flex justify-between items-center bg-[#31313d]' ref={ref}>
-      <span className='ml-4 text-white'>3HCR</span>
+      <div>
+        <span className='ml-4 text-white'>3HCR</span>
+        <img
+          className='h-6 ml-4 inline rounded-full'
+          src={LOGO}
+          alt="logo" />
+      </div>
+
       <div
         className='mr-4 my-2 cursor-pointer'
       >
