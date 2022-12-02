@@ -6,12 +6,7 @@ import CRN_LOGO from '../../assets/images/CRN-Logo-RGB-Colour.webp'
 import CBF_LOGO from '../../assets/images/CBF-Logo_RGB-Screens.webp'
 import AUDIO_URL from '../../dataBase/audioUrl'
 
-// md:block md:ml-4 md:mr-4 xl:block xl:ml-20 xl:mr-4
-// hidden
 
-
-// md:block md:mr-4 md:ml-4 xl:block xl:mr-20 xl:ml-4
-// hidden
 const Radio = () => {
     return (
         <div className='
