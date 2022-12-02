@@ -24,7 +24,7 @@ const Radio = () => {
 
             <div className='
             md:w-3/5 md:h-2/3
-            h-full
+            h-full relative
             '>
 
                 <AudioPlayer
@@ -36,6 +36,13 @@ const Radio = () => {
                     customControlsSection={["MAIN_CONTROLS", "VOLUME_CONTROLS"]}
                     autoPlayAfterSrcChange={false}
                 />
+
+                <div className='md:hidden'>
+                    <span className='text-xs bg-yellow-400 rounded-lg px-2 py-0.5 font-serif absolute left-6 bottom-2'>FM 90.9 & 97.3 </span>
+                </div>
+                <div className='md:hidden'>
+                    <span className='text-xs bg-lime-500 rounded-lg px-2 py-0.5 font-serif absolute right-7 bottom-2'>3HCR OMEO</span>
+                </div>
             </div>
 
             <div className='
@@ -47,12 +54,7 @@ const Radio = () => {
                 <span className='block text-xs bg-lime-500 rounded-full px-2 py-0.5 font-serif'>3HCR OMEO</span>
             </div>
 
-            <div className='md:hidden'>
-                <span className='text-xs bg-yellow-400 rounded-lg px-2 py-0.5 font-serif absolute left-10 bottom-2'>FM 90.9 & 97.3 </span>
-            </div>
-            <div className='md:hidden'>
-                <span className='text-xs bg-lime-500 rounded-lg px-2 py-0.5 font-serif absolute right-7 bottom-2'>3HCR OMEO</span>
-            </div>
+
         </div>
     )
 }
