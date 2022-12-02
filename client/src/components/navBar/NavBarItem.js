@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import ChevronDown from '../icons/chevron-down'
 import NavBarDropDownModal from './NavBarDropDownModal'
+import { useNavigate } from 'react-router-dom'
 import './navBarItem.css'
 
-const NavBarItem = ({ title, showDropDownModal, navItems }) => {
+const NavBarItem = ({ title, showDropDownModal, navItems, navItemURL, isNavigate }) => {
+    const navigate = useNavigate()
+
     const [isShowModal, setIsShowModal] = useState(false)
     const [isHovering, setIsHovering] = useState(false)
 
@@ -18,7 +21,7 @@ const NavBarItem = ({ title, showDropDownModal, navItems }) => {
     }
     return (
         <div
-            className='NavBarItem relative mr-10 h-full flex items-center cursor-pointer'
+            className={`NavBarItem relative mr-10 h-full flex items-center ${isNavigate ? 'cursor-pointer' : ''}`}
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
         >
@@ -28,6 +31,7 @@ const NavBarItem = ({ title, showDropDownModal, navItems }) => {
 
             >
                 <span
+                    onClick={() => isNavigate ? navigate(navItemURL) : null}
                     className='NavBarItem-span text-[#4d4d54] font-normal'>
                     {title}
                 </span>

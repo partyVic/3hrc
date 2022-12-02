@@ -23,9 +23,9 @@ const Footer = () => {
           <div className='text-white'>
             <span className='flex'>
               <MapPin />
-              <p className='ml-2'>73 Sebastopol Hill Road, Omeo</p>
+              <p className='ml-2'>73 Sebastopol Hill Road</p>
             </span>
-            <p className='mb-2 ml-7'>Victoria 3898 Australia</p>
+            <p className='mb-2 ml-7'>Omeo, Victoria 3898 Australia</p>
           </div>
 
           <span className='text-white flex'>
@@ -38,12 +38,12 @@ const Footer = () => {
       <div className=' font-lato text-sm md:mr-20 md:mt-0 mt-6 xl:mr-32'>
         <h4 className='text-[#9ba4ac]'>FOLLOW US</h4>
         <div className='flex mt-2'>
-          <span className='text-white mr-4'>
+          <span className='text-white mr-6'>
             <a href="https://www.facebook.com/profile.php?id=100010179306405">
               <Facebook />
             </a>
           </span>
-          <span className='text-white mr-4'>
+          <span className='text-white mr-6'>
             <Linkedin />
           </span>
           <span className='text-white'>

@@ -14,6 +14,8 @@ const NavBar = () => {
           key={item.title}
           title={item.title}
           navItems={item.navItems}
+          isNavigate={item.navItems.length > 0 ? false : true}
+          navItemURL={item.navItemURL}
           showDropDownModal={item.navItems.length > 0 ? true : false}
         />
       ))}
