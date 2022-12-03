@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm start --prefix client"
+    "start": "npm start --prefix client",
+    "build": "npm run build --prefix client"
   },
   "author": "partyVic",
   "license": "ISC"
