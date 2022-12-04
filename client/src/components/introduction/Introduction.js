@@ -13,7 +13,7 @@ const Introduction = () => {
                 md:hidden
                 h-1/5 flex
                 '>
-                <div className='h-4/5 w-1 bg-rose-500 rounded ml-4 mt-3'></div>
+                <div className='h-4/5 w-1 bg-rose-500 rounded ml-4 mt-2.5'></div>
                 <div className='w-full h-full mt-2 mx-4'>
                     <h2 className='text-lg font-bold text-rose-500'>[Title of this web: 2-6 words]</h2>
                     <p className='mt-1 text-sm font-medium text-slate-500'>[Brief description of the web : around 10-20 words]</p>

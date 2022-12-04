@@ -21,7 +21,7 @@ const NavIcon = () => {
   useOutSideClick(ref, handleModalClose)
 
   return (
-    <div className='flex justify-between items-center bg-[#31313d]' ref={ref}>
+    <div className='flex justify-between items-center bg-[#1b2024]' ref={ref}>
       <div>
         <span className='ml-4 text-white'>3HCR Omeo</span>
         <img

@@ -9,7 +9,7 @@ import Youtube from './icons/youtube'
 const Footer = () => {
   return (
     <div className='
-    md:flex bg-black md:px-20 xl:px-40
+    md:flex bg-[#1b2024] md:px-20 xl:px-40
     block py-10 px-10
     '>
 
