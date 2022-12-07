@@ -19,7 +19,7 @@ export const Support = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" required />

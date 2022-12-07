@@ -11,16 +11,20 @@ import Forms from './screens/Forms'
 const App = () => {
   return (
     <Router>
-      <Header />
-      <div>
-        <Routes>
-          <Route path="/support" element={<Support />} />
-          <Route path="/supporters" element={<Supporters />} />
-          <Route path="/forms" element={<Forms />} />
-          <Route path="/" element={<HomeScreen />} />
-        </Routes>
+      <div className='min-h-screen flex flex-col'>
+        <Header />
+        <div className='grow'>
+          <Routes>
+            <Route path="/support" element={<Support />} />
+            <Route path="/supporters" element={<Supporters />} />
+            <Route path="/forms" element={<Forms />} />
+            <Route path="/" element={<HomeScreen />} />
+          </Routes>
+        </div>
+        <div className=''>
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </Router>
   )
 }
