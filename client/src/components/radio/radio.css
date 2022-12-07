@@ -28,7 +28,6 @@
 
 .rhap_controls-section .rhap_volume-controls {
   fill: rgb(235, 235, 235) !important;
-  justify-content: end;
 }
 
 .rhap_controls-section .rhap_main-controls button[aria-label="Play"] svg path {

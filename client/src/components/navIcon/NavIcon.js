@@ -25,7 +25,7 @@ const NavIcon = () => {
       <div>
         <span className='ml-4 text-white'>3HCR Omeo</span>
         <img
-          className='h-6 ml-4 inline rounded-full'
+          className='h-6 w-6 ml-4 inline rounded'
           src={LOGO}
           alt="logo" />
       </div>

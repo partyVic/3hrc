@@ -28,8 +28,8 @@ const NavHeaderTitle = () => {
                     3HCR Omeo
                     <Logo />
                 </div>
-                <span className='cursor-pointer '>
-                    <img className='h-10 ml-20 px-2 bg-[#ecf0f1] rounded' src={CBAA} alt="cbaa" />
+                <span className=''>
+                    <img className='h-10 ml-20 px-2 bg-[#ecf0f1] rounded cursor-pointer' src={CBAA} alt="cbaa" />
                 </span>
             </div>
 
