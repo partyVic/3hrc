@@ -7,6 +7,8 @@ export const Support = () => {
 
   const [isSending, setIsSending] = useState(false)
 
+  console.log(form.current)
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,7 +22,7 @@ export const Support = () => {
 
   return (
     <div className=''>
-      <form ref={form} onSubmit={sendEmail}>
+      <form  onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" required />
         <label>Email</label>
@@ -35,12 +37,12 @@ export const Support = () => {
           <div>
 
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-              Sign in to your account
+              Send message to us
             </h2>
 
           </div>
 
-          <form className="mt-8 space-y-6">
+          <form ref={form} className="mt-8 space-y-6">
             <div className="-space-y-px rounded-md shadow-sm">
 
               <div>
@@ -53,7 +55,7 @@ export const Support = () => {
                   type="name"
                   autoComplete="current-name"
                   required
-                  className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Name"
                 />
               </div>
@@ -67,8 +69,8 @@ export const Support = () => {
                   type="email"
                   autoComplete="email"
                   required
-                  className="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                  placeholder="Email address"
+                  className="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Your email address"
                 />
               </div>
               <div>
@@ -82,7 +84,7 @@ export const Support = () => {
                   autoComplete="current-message"
                   rows={6}
                   required
-                  className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Add your message..."
                 />
               </div>
