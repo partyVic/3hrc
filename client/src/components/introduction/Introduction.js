@@ -1,5 +1,6 @@
 import React from 'react'
 import INTRO_IMG from '../../assets/images/body_Intro.jpg'
+import { INTRO_BODY, INTRO_TITLE } from '../../dataBase/introduction'
 
 const Introduction = () => {
     return (
@@ -15,8 +16,8 @@ const Introduction = () => {
                 '>
                 <div className='h-4/5 w-1 bg-rose-500 rounded ml-4 mt-2.5'></div>
                 <div className='w-full h-full mt-2 mx-4'>
-                    <h2 className='text-lg font-bold text-rose-500'>[Title of this web: 2-6 words]</h2>
-                    <p className='mt-1 text-sm font-medium text-slate-500'>[Brief description of the web : around 10-20 words]</p>
+                    <h2 className='text-lg font-bold text-rose-500'>{INTRO_TITLE}</h2>
+                    <p className='mt-1 text-sm font-medium text-slate-500'>{INTRO_BODY}</p>
                 </div>
             </div>
 
@@ -37,8 +38,8 @@ const Introduction = () => {
                     '>
                     <div className='h-4/5 w-1 bg-rose-500 rounded ml-4 mt-6'></div>
                     <div className='w-full h-full mt-4 ml-10 mr-4'>
-                        <h2 className='text-4xl font-bold text-rose-500'>[Title of this web: 2-6 words]</h2>
-                        <p className='mt-4 text-lg font-medium text-white'>[Brief description of the web : around 10-20 words]</p>
+                        <h2 className='text-4xl font-bold text-rose-500'>{INTRO_TITLE}</h2>
+                        <p className='mt-4 text-lg font-medium text-white'>{INTRO_BODY}</p>
                     </div>
                 </div>
             </div>
