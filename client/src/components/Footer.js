@@ -16,10 +16,12 @@ const Footer = () => {
       <div className='font-lato text-sm md:mr-20 xl:mr-32'>
         <h4 className='text-[#9ba4ac]'>CONTACT US</h4>
         <div className='mt-2'>
-          <span className='text-white flex mb-2'>
-            <Phone />
-            <p className='ml-2'>0493 088 902</p>
-          </span>
+          <a href="tel:+61493088902">
+            <span className='text-white flex mb-2'>
+              <Phone />
+              <p className='ml-2'>0493 088 902</p>
+            </span>
+          </a>
           <div className='text-white'>
             <span className='flex'>
               <MapPin />
@@ -28,10 +30,12 @@ const Footer = () => {
             <p className='mb-2 ml-7'>Omeo, Victoria 3898 Australia</p>
           </div>
 
-          <span className='text-white flex'>
-            <Envelope />
-            <p className='ml-2'>oscarefem@gmail.com</p>
-          </span>
+          <a href="mailto:oscarefem@gmail.com">
+            <span className='text-white flex'>
+              <Envelope />
+              <p className='ml-2'>oscarefem@gmail.com</p>
+            </span>
+          </a>
         </div>
       </div>
 

@@ -23,7 +23,7 @@ const HomeScreen = () => {
         <Introduction />
       </div>
 
-    {/* //! parent div: set to relative */}
+      {/* //! parent div: set to relative */}
       <div className='
       md:h-44 
       w-full h-24 relative
