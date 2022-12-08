@@ -1,37 +1,57 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Spinner from '../components/icons/spinner';
+import Toast from '../components/Toast';
+
+const initialFormValue = {
+  user_name: '',
+  user_email: '',
+  message: ''
+}
 
 export const Support = () => {
+  const timer = useRef(null)
   const form = useRef()
 
   const [isSending, setIsSending] = useState(false)
+  const [inputData, setInputData] = useState(initialFormValue)
+  const [isShowToast, setIsShowToast] = useState(false)
 
-  console.log(form.current)
+  const onInputChange = (e) => {
+    const { id, value } = e.target
+    setInputData({ ...inputData, [id]: value })
+  }
+
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true)
 
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
-        console.log(result.text);
+        setIsSending(false)
+        setInputData(initialFormValue)
+        setIsShowToast(true)
+        // console.log(result.text);
       }, (error) => {
-        console.log(error.text);
+        setIsSending(false)
+        setInputData(initialFormValue)
+        // console.log(error.text);
       });
   };
 
+  useEffect(() => {
+    timer.current = setTimeout(() => {
+      setIsShowToast(false)
+    }, 2000)
+
+    return () => {
+      clearTimeout(timer.current)
+    }
+  }, [isShowToast])
+
   return (
     <div className=''>
-      <form  onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" required />
-        <label>Email</label>
-        <input type="email" name="user_email" required />
-        <label>Message</label>
-        <textarea name="message" required />
-        <button type='submit'>Send</button>
-      </form>
-
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
@@ -42,7 +62,7 @@ export const Support = () => {
 
           </div>
 
-          <form ref={form} className="mt-8 space-y-6">
+          <form ref={form} onSubmit={sendEmail} className="mt-8 space-y-6">
             <div className="-space-y-px rounded-md shadow-sm">
 
               <div>
@@ -50,13 +70,15 @@ export const Support = () => {
                   Name
                 </label>
                 <input
-                  id="name"
-                  name="name"
+                  id="user_name"
+                  name="user_name"
                   type="name"
                   autoComplete="current-name"
                   required
                   className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Name"
+                  value={inputData.user_name}
+                  onChange={onInputChange}
                 />
               </div>
               <div>
@@ -64,13 +86,15 @@ export const Support = () => {
                   Email address
                 </label>
                 <input
-                  id="email-address"
-                  name="email"
+                  id="user_email"
+                  name="user_email"
                   type="email"
                   autoComplete="email"
                   required
                   className="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Your email address"
+                  value={inputData.user_email}
+                  onChange={onInputChange}
                 />
               </div>
               <div>
@@ -86,6 +110,8 @@ export const Support = () => {
                   required
                   className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Add your message..."
+                  value={inputData.message}
+                  onChange={onInputChange}
                 />
               </div>
             </div>
@@ -100,6 +126,8 @@ export const Support = () => {
               </button>
             </div>
           </form>
+
+          <Toast isShowToast={isShowToast} />
         </div>
       </div>
     </div>
