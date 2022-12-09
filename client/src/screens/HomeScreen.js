@@ -25,6 +25,7 @@ const HomeScreen = () => {
         <Introduction />
       </div>
 
+
       {/* //! parent div: set to relative */}
       <div className='
       md:h-44 
@@ -39,12 +40,19 @@ const HomeScreen = () => {
           <Radio />
         </div>
       </div>
+
+
       <div className='h-48 bg-fuchsia-100'><Live />Discover: Radio Program Overview under construction</div>
-      <div
+
+
+      {/* <div
         className='
-        md:h-[32rem] xl:h-[24rem]
+        md:h-[32rem] xl:h-[24rem] md:flex
         bg-fuchsia-300
         '>
+        <NewsBoard />
+      </div> */}
+      <div>
         <NewsBoard />
       </div>
 
