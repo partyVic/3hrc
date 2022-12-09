@@ -1,0 +1,62 @@
+.Live {
+    background-color: #FACC15;
+    display: flex;
+    width: 4rem;
+    height: 1.6rem;
+    font-weight: 600;
+    font-size: smaller;
+    letter-spacing: 0.2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+}
+
+.Live-icon {
+    position: relative;
+    background-color: rgba(188, 136, 0, 1);
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 50%;
+    animation: Live 2s ease infinite;
+    -webkit-animation: Live 2s ease infinite;
+}
+
+.Live-icon::after {
+    content: '';
+    display: block;
+    border: 1px solid rgba(188, 136, 0, 1);
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    top: -1.5px;
+    left: -1.5px;
+    position: absolute;
+    opacity: .8;
+    -webkit-animation: Live 2s ease 2s infinite;
+    animation: Live-After 2s ease 2s infinite;
+}
+
+@keyframes Live {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+}
+
+@keyframes Live-After {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
