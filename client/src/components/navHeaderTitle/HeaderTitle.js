@@ -44,9 +44,9 @@ const NavHeaderTitle = () => {
                     className='flex cursor-pointer'
                     onClick={() => navigate('/support')}
                 >
-                    <span className='mr-1 mt-1 text-indigo-500 hover:text-indigo-600'>
+                    {/* <span className='mr-1 mt-1 text-indigo-500 hover:text-indigo-600'>
                         <Radio />
-                    </span>
+                    </span> */}
                     <span className='bg-indigo-500 hover:bg-indigo-600 text-white px-3 py-1 rounded-full'>Enquiry & support</span>
                 </div>
             </div>
