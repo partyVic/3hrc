@@ -1,25 +1,29 @@
 import React from 'react'
 
-import img from '../../assets/images/news-title.png'
-
-const NewsModal = () => {
+const NewsModal = ({ date, imageTitle, content, title }) => {
     return (
         <div className='
-        mx-4 my-4
+        mx-4 py-12
         md:mx-12 lg:mx-40 xl:mx-72
         '>
-            <div className='bg-rose-500 h-1 w-full mb-4 relative'>
+            {/* <div className='bg-rose-400 h-1 w-full mb-2 relative'>
                 <div className='text-sm font-bold text-gray-500 absolute bg-white -top-2 pr-4'>
-                    12-12-2022
+                    {date}
                 </div>
-            </div>
+            </div> */}
 
             <div className='flex bg-[#f5f5f5] p-2 rounded'>
                 <img
                     className='lg:w-[20%] md:w-[25%] w-[35%] rounded-l'
-                    src={img} alt="" />
+                    src={imageTitle} alt="" />
                 <div>
-                    <p>content</p>
+                    <div className='px-4'>
+                        <div className='flex justify-start items-center'>
+                            <span className='text-sm font-bold text-white bg-rose-500 px-2'>{date}</span>
+                            <p className='ml-4 font-extrabold tracking-wide'>{title}</p>
+                        </div>
+                        <p className=''>{content}</p>
+                    </div>
                 </div>
 
             </div>

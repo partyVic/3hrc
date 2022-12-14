@@ -5,10 +5,18 @@ import NewsModal from '../components/news/NewsModal'
 
 const News = () => {
 
-  console.log(allNews)
   return (
     <div>
-      <NewsModal />
+      {allNews.map(news => (
+        <div key={news.date}>
+          <NewsModal
+            date={news.date}
+            imageTitle={news.images.imageTitle}
+            content={news.content}
+            title={news.title}
+          />
+        </div>
+      ))}
     </div>
   )
 }
